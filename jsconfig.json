@@ -1,0 +1,17 @@
+{ 
+    "compilerOptions": {
+        "target": "ES6"
+    },
+    
+    "typeAcquisition": {
+        "include": [
+            "phaser"
+        ]
+    },
+
+    "exclude": [
+        "node_modules",
+        "**/node_modules/*",
+        "node_modules/**/*"
+    ]
+}
