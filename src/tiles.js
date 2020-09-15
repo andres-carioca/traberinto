@@ -104,12 +104,17 @@ class Tiles extends Array {
     reorder() {
 
 
+        // console.log(this);
 
         for (var id = 0; id < this.length; id++) {
 
+            this[id].pos=id;
 
-            this[id].position.x = this.x + (~~(id / 3) * this[id].width);
-            this[id].position.y = this.y + ((id % 3) * this[id].width);
+            // this[id].position.x = this.x + (~~(id / 3) * this[id].width);
+            // this[id].position.y = this.y + ((id % 3) * this[id].width);
+           
+            this[id].position.x = this.x + ((id % 3) * this[id].width);
+            this[id].position.y = this.y + (~~(id / 3) * this[id].width);
 
         }
 
